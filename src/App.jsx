@@ -17,6 +17,7 @@ function App() {
     <>
       <Nav actual={"Principal"} referencia="./tienda.jsx" otra={"Tienda"}></Nav>
       <Carrito></Carrito>
+      
     </>
   )
 }
