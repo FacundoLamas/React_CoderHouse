@@ -1,16 +1,21 @@
+body {
+  background-color: grey;
+}
 body * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 body #root {
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: [primera] 1fr [segunda] 1fr [tercera] 1fr [cuarta];
-  grid-template-rows: [primera] 1fr [segunda] 3fr [tercera] 3fr [cuarta];
+  grid-template-rows: [primera] 1fr [segunda] 1fr [tercera] 4fr [cuarta];
 }
-body #root nav {
+
+nav {
   grid-row: primera/segunda;
   grid-column: primera/cuarta;
   display: grid;
@@ -18,33 +23,33 @@ body #root nav {
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
 }
-body #root nav #navImg {
+nav #navImg {
   width: 1fr;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-body #root nav #navImg img {
+nav #navImg img {
   width: 20vh;
 }
-body #root nav #navTitulo {
+nav #navTitulo {
   width: 1fr;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-body #root nav #navTitulo h1 {
+nav #navTitulo h1 {
   color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body #root nav #navLinks {
+nav #navLinks {
   width: 1fr;
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
 }
-body #root nav #navLinks li {
+nav #navLinks li {
   margin: 1vw;
   width: max-content;
   padding: 0% 5%;
@@ -54,7 +59,7 @@ body #root nav #navLinks li {
   border-radius: 100px;
   background-color: whitesmoke;
 }
-body #root nav #navLinks li a {
+nav #navLinks li a {
   color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
